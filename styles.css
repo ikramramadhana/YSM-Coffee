@@ -461,7 +461,7 @@ body {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: url('images/coffee.jpeg') no-repeat center center/cover;
+    background: url('images/utama.jpeg') no-repeat center center/cover;
     color: white;
 }
 
@@ -544,3 +544,96 @@ body.dark-mode {
     opacity: 1;
     transform: translateY(0);
 }
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ff9800;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background: #111;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25d366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+    }
+    
+    .whatsapp {
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .whatsapp img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
